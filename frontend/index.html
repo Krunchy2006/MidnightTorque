@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midnight Torque - Motor Bike Accessories</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">MT</div>
+                <div class="logo-text">
+                    <h1>Midnight Torque</h1>
+                    <p>Power. Precision. Performance.</p>
+                </div>
+            </div>
+            <div class="nav-links">
+                <button class="nav-btn active" onclick="showPage('home')">Home</button>
+                <button class="nav-btn" onclick="showPage('products')">Products</button>
+                <button class="nav-btn cart-badge" onclick="showPage('cart')">
+                    Cart
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+                <button class="nav-btn" onclick="showPage('contact')">Contact</button>
+                <button class="nav-btn" onclick="showPage('feedback')">Feedback</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div id="home" class="page active">
+            <div class="hero-section">
+                <img src="https://images.unsplash.com/photo-1558981852-426c6c22a060?w=1200" alt="Motorcycle" class="hero-img">
+                <div class="hero-overlay">
+                    <div class="hero-content">
+                        <h2>Welcome to Midnight Torque</h2>
+                        <p class="hero-tagline">Power. Precision. Performance.</p>
+                        <button class="btn-primary" onclick="showPage('products')">Explore Products</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="special-offers">
+                <h3>🎄 Christmas & New Year Special! 🎊</h3>
+                <p>🎁 Festive Season Mega Sale!</p>
+                <p>✨ Get FLAT 15% OFF on orders above ₹2000</p>
+                <p>🎉 Extra 5% OFF on orders above ₹5000</p>
+                <p class="offer-highlight">⚡ Limited Time Offer - Hurry Up! ⚡</p>
+                <p>Offer valid till 5th January 2026</p>
+            </div>
+
+            <div class="intro-section">
+                <p class="intro-text">
+                    Founded for passionate riders who demand the best. At Midnight Torque, we specialize in premium motor bike accessories that combine safety, performance, and aesthetic excellence.
+                </p>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🛡️</div>
+                        <h3>Safety First</h3>
+                        <p>DOT certified and tested equipment</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Performance</h3>
+                        <p>Enhanced power and handling</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">✨</div>
+                        <h3>Style</h3>
+                        <p>Premium aesthetics for riders</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="products" class="page">
+            <h2 class="page-title">Our Products</h2>
+            <div class="products-grid" id="productsGrid"></div>
+        </div>
+
+        <div id="cart" class="page">
+            <h2 class="page-title">Shopping Cart</h2>
+            <div id="cartContent"></div>
+        </div>
+
+        <div id="contact" class="page">
+            <h2 class="page-title">Contact Us</h2>
+            <div class="contact-info">
+                <div class="info-item">
+                    <span class="info-icon">📍</span>
+                    <div>
+                        <p class="info-label">Address</p>
+                        <p class="info-value">123 Racing Street, Speed City, SC 560001</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">📞</span>
+                    <div>
+                        <p class="info-label">Phone</p>
+                        <p class="info-value">+91 98765 43210</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">✉️</span>
+                    <div>
+                        <p class="info-label">Email</p>
+                        <p class="info-value">contact@midnighttorque.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-container">
+                <h3>Send Us a Message</h3>
+                <form id="contactForm" onsubmit="submitContact(event)">
+                    <div class="form-group">
+                        <input type="text" id="contactName" placeholder="Your Name" required>
+                        <span class="error-msg" id="contactNameError"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="contactEmail" placeholder="Your Email" required>
+                        <span class="error-msg" id="contactEmailError"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="contactPhone" placeholder="Your Phone (10 digits)" required>
+                        <span class="error-msg" id="contactPhoneError"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="contactMessage" placeholder="Your Message" rows="4" required></textarea>
+                        <span class="error-msg" id="contactMessageError"></span>
+                    </div>
+                    <button type="submit" class="btn-primary">Submit Contact Form</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="feedback" class="page">
+            <h2 class="page-title">Share Your Feedback</h2>
+            <div class="form-container">
+                <form id="feedbackForm" onsubmit="submitFeedback(event)">
+                    <div class="form-group">
+                        <input type="text" id="feedbackName" placeholder="Your Name" required>
+                        <span class="error-msg" id="feedbackNameError"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="feedbackEmail" placeholder="Your Gmail (@gmail.com only)" required>
+                        <span class="error-msg" id="feedbackEmailError"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="feedbackPhone" placeholder="Your Phone (10 digits)" required>
+                        <span class="error-msg" id="feedbackPhoneError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label>Rating (1-5)</label>
+                        <div class="rating-stars">
+                            <span class="star" onclick="setRating(1)">★</span>
+                            <span class="star" onclick="setRating(2)">★</span>
+                            <span class="star" onclick="setRating(3)">★</span>
+                            <span class="star" onclick="setRating(4)">★</span>
+                            <span class="star" onclick="setRating(5)">★</span>
+                        </div>
+                        <input type="hidden" id="feedbackRating" value="5">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="feedbackMessage" placeholder="Your Feedback (min 10 chars)" rows="5" required></textarea>
+                        <span class="error-msg" id="feedbackMessageError"></span>
+                    </div>
+                    <button type="submit" class="btn-primary">Submit Feedback</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="successToast" class="success-toast">
+        <span>✓</span>
+        <span id="toastMessage"></span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
