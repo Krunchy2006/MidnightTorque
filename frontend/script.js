@@ -252,6 +252,7 @@ function submitContact(event) {
     const message = document.getElementById('contactMessage').value;
 
     if (!/^\d{10}$/.test(phone)) { showError('contactPhoneError', '10 digits required'); return; }
+     if (!email.endsWith('@gmail.com')) { showError('contactEmailError', 'Use @gmail.com only'); return; }
 
     sendToBackend({ type: 'CONTACT', name, email, phone, message, timestamp: new Date().toLocaleString() });
     document.getElementById('contactForm').reset();
@@ -264,8 +265,14 @@ function submitFeedback(event) {
     const email = document.getElementById('feedbackEmail').value;
     const rating = document.getElementById('feedbackRating').value;
     const message = document.getElementById('feedbackMessage').value;
+    const phone = document.getElementById('feedbackPhone').value.trim();
 
     if (!email.endsWith('@gmail.com')) { showError('feedbackEmailError', 'Use @gmail.com only'); return; }
+    if (!/^\d{10}$/.test(phone)) {
+    showError('feedbackPhoneError', 'Phone must be exactly 10 digits');
+    return;
+}
+
 
     sendToBackend({ type: 'FEEDBACK', name, email, rating, message, timestamp: new Date().toLocaleString() });
     document.getElementById('feedbackForm').reset();

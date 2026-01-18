@@ -21,3 +21,167 @@ SELECTED ITEMS:
 TOTAL AMOUNT: ₹11157.3
 ==================================================
 
+
+============================================================
+TYPE: FEEDBACK
+DATE & TIME: 1/1/2026, 10:14:30 AM
+------------------------------------------------------------
+NAME: tanish
+EMAIL: aha@gmail.com
+PHONE: undefined
+RATING: 5/5
+FEEDBACK: hello guys
+============================================================
+
+
+============================================================
+TYPE: FEEDBACK
+DATE & TIME: 1/1/2026, 10:14:59 AM
+------------------------------------------------------------
+NAME: Tanish T
+EMAIL: aha@gmail.com
+PHONE: undefined
+RATING: 5/5
+FEEDBACK: hielsoosll
+============================================================
+
+
+============================================================
+TYPE: CONTACT
+DATE & TIME: 1/1/2026, 10:19:04 AM
+------------------------------------------------------------
+NAME: Tanish
+EMAIL: aha@gmail
+PHONE: 1234567891
+MESSAGE: hello
+============================================================
+
+
+============================================================
+TYPE: FEEDBACK
+DATE & TIME: 1/1/2026, 10:21:59 AM
+------------------------------------------------------------
+NAME: hel
+EMAIL: aha@gmail.com
+PHONE: undefined
+RATING: 5/5
+FEEDBACK: hello there how are u
+============================================================
+
+
+============================================================
+TYPE: CONTACT
+DATE & TIME: 1/1/2026, 10:25:50 AM
+------------------------------------------------------------
+NAME: Tanish
+EMAIL: aha@gmail.com
+PHONE: 1234567891
+MESSAGE: he
+============================================================
+
+
+============================================================
+TYPE: ORDER
+DATE & TIME: 1/1/2026, 10:31:19 AM
+------------------------------------------------------------
+CUSTOMER INFORMATION:
+  Name: Tanish
+  Email: tn@gmail.com
+  Phone: 1234567891
+
+DELIVERY ADDRESS:
+  #5, Venus, 1st Floor, 3rd Cross, Opp. Airforce Camp, Wind Tunnel Road, Murugeshpalya
+  Bengaluru Urban, Karnataka
+  PIN: 560017
+  India
+
+ORDERED ITEMS:
+  1. LED Headlight Upgrade Kit - ₹3,499
+  2. Carbon Fiber Helmet - ₹6,999
+  3. Riding Gloves (Armored) - ₹1,899
+
+PRICE BREAKDOWN:
+  Subtotal: ₹12,397
+  Discount (10%): -₹1,239.7
+  TOTAL AMOUNT: ₹11,157.3
+============================================================
+
+
+============================================================
+TYPE: ORDER
+DATE & TIME: 1/1/2026, 10:34:54 AM
+------------------------------------------------------------
+CUSTOMER INFORMATION:
+  Name: Tanish
+  Email: tn@gmail.com
+  Phone: 1235467891
+
+DELIVERY ADDRESS:
+  #5, Venus, 1st Floor, 3rd Cross, Opp. Airforce Camp, Wind Tunnel Road, Murugeshpalya
+  Bengaluru Urban, Karnataka
+  PIN: 560017
+  India
+
+ORDERED ITEMS:
+  1. Carbon Fiber Helmet - ₹6,999
+  2. LED Headlight Upgrade Kit - ₹3,499
+  3. Frame Sliders - ₹2,199
+  4. Riding Jacket (All-Weather) - ₹5,999
+  5. Mobile Holder with USB Charger - ₹1,499
+
+PRICE BREAKDOWN:
+  Subtotal: ₹20,195
+  Discount (10%): -₹2,019.5
+  TOTAL AMOUNT: ₹18,175.5
+============================================================
+
+
+============================================================
+TYPE: FEEDBACK
+DATE & TIME: 1/1/2026, 11:41:36 AM
+------------------------------------------------------------
+NAME: Tanish T
+EMAIL: aha@gmail.com
+PHONE: undefined
+RATING: 5/5
+FEEDBACK: thank you
+============================================================
+
+
+============================================================
+TYPE: ORDER
+DATE & TIME: 1/1/2026, 7:13:32 PM
+------------------------------------------------------------
+CUSTOMER INFORMATION:
+  Name: Tanish
+  Email: tn@gmail.com
+  Phone: 1234567891
+
+DELIVERY ADDRESS:
+  #5, Venus, 1st Floor, 3rd Cross, Opp. Airforce Camp, Wind Tunnel Road, Murugeshpalya
+  Bengaluru Urban, Karnataka
+  PIN: 560017
+  India
+
+ORDERED ITEMS:
+  1. Carbon Fiber Helmet - ₹6,999
+  2. Performance Exhaust (Slip-On) - ₹12,999
+
+PRICE BREAKDOWN:
+  Subtotal: ₹19,998
+  Discount (10%): -₹1,999.8
+  TOTAL AMOUNT: ₹17,998.2
+============================================================
+
+
+============================================================
+TYPE: FEEDBACK
+DATE & TIME: 1/1/2026, 7:14:29 PM
+------------------------------------------------------------
+NAME: nigga
+EMAIL: nigaaaaaa@gmail.com
+PHONE: undefined
+RATING: 4/5
+FEEDBACK: nigga sur posh
+============================================================
+
